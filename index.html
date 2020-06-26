@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>App Invoke</title>
+</head>
+<body>
+<input id="inputURL" type="text" placeholder="URL">
+<button id="fun">Fun</button>
+<a id="appInvoke" href="{value of inputURL}">Click</a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function(){
+$('button[id=fun]').on("click",function(){ 
+    $('#appInvoke').prop("href",$('#inputURL').val());
+    });
+});
+</script>
+</body>
+</html>
